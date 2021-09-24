@@ -6,13 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 
 import com.mopub.nativeads.MoPubRecyclerAdapter;
 import com.mopub.nativeads.MoPubStaticNativeAdRenderer;
 import com.mopub.nativeads.ViewBinder;
-import com.twitter.ads.MyMoPub;
 import com.twitter.ads.R;
 import com.twitter.ads.adapter.RecyclerviewAdapter;
 
@@ -91,7 +89,7 @@ private List<String>listtext;
         ViewBinder viewBinder = new ViewBinder.Builder(R.layout.mopub_native_ad_view)
                 .titleId(R.id.mopub_native_ad_title)
                 .textId(R.id.mopub_native_ad_text)
-                .mainImageId(R.id.mopub_native_ad_main_imageview)
+                //.mainImageId(R.id.mopub_native_ad_main_imageview)
                 .iconImageId(R.id.mopub_native_ad_icon)
                 .callToActionId(R.id.mopub_native_ad_cta)
                 .privacyInformationIconImageId(R.id.mopub_native_ad_privacy)

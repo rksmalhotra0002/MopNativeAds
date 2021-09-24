@@ -17,7 +17,6 @@ import com.mopub.nativeads.MoPubStaticNativeAdRenderer;
 import com.mopub.nativeads.NativeAd;
 import com.mopub.nativeads.NativeErrorCode;
 import com.mopub.nativeads.ViewBinder;
-import com.twitter.ads.MyMoPub;
 import com.twitter.ads.R;
 
 import java.util.HashMap;
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
             ViewBinder viewBinder = new ViewBinder.Builder(R.layout.mopub_native_ad_view)
                     .titleId(R.id.mopub_native_ad_title)
                     .textId(R.id.mopub_native_ad_text)
-                    .mainImageId(R.id.mopub_native_ad_main_imageview)
+                    //.mainImageId(R.id.mopub_native_ad_main_imageview)
                     .iconImageId(R.id.mopub_native_ad_icon)
                     .callToActionId(R.id.mopub_native_ad_cta)
                     .privacyInformationIconImageId(R.id.mopub_native_ad_privacy)
@@ -144,5 +143,4 @@ public class MainActivity extends AppCompatActivity {
         moPubNative.destroy();
         super.onDestroy();
     }
-
 }

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Twitter_java_ads</string>
     <string name="shubham">shubham</string>
+    <string name="privacy_information_icon_image">Privacy Information Icon image</string>
+    <string name="consectetur">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="free_to_play">Free to play</string>
+    <string name="aliqua">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
 </resources>
