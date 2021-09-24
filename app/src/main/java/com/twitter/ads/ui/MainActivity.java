@@ -140,7 +140,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onDestroy() {
-        moPubNative.destroy();
+        try {
+
+            moPubNative.destroy();
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
         super.onDestroy();
     }
 }

@@ -33,7 +33,15 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.tv_text.setText(list.get(position));
+        try {
+
+            holder.tv_text.setText(list.get(position));
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
 
     }
 
